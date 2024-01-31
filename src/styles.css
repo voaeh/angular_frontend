@@ -1,0 +1,53 @@
+/* Styles for wrapping the search box */
+.container {
+    align-items: center;
+}
+.hamburger-menu{
+    float:right;
+    color:#FFFFFF;
+    padding-top:15px;
+    font-size:32px;
+    font-weight: bold;
+}
+.hamburger-menu label{
+    cursor:pointer;
+}
+.header{
+    background-color: #F2BE22;
+}
+.header-search {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.has-search .form-control {
+    padding-left: 2.5rem;
+    height:45px;
+    border-radius: 25px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.7rem;
+    text-align: center;
+    pointer-events: none;
+    padding-left: 0.5rem;
+    color: #aaa;
+    font-size:22px;
+}
+
+/**footer**/
+footer{
+    background-color: #EEC759;
+}
+/**artist page**/
+.artist-image{
+    max-width: 450px;
+    width:100%;
+    margin:0 auto;
+    display: block;
+}
