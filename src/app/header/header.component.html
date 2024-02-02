@@ -11,10 +11,12 @@
 
 <div class="row">
 
-        <div class="col-3">
-
+        <div class="header-left">
+            <div class="hamburger-menu">
+                <label (click)="openMenu()"><i class="fa-solid fa-bars"></i></label>
+            </div>
         </div>
-        <div class="col-6">
+        <div class="header-center">
             <div class="header-search">
                 <div class="form-group has-search">
                     <span class="fa fa-search form-control-feedback"></span>
@@ -22,9 +24,25 @@
                 </div>
             </div>
         </div>
-        <div class="col-3">
-            <div class="hamburger-menu">
-                <label (click)="openMenu()"><i class="fa-solid fa-bars"></i></label>
+        <div class="header-right">
+            <div id="headerSp">
+                <div class="shopping-cart">
+                    <img src="./assets/images/cart.png" />
+                    <div class="cart-number">100</div>
+                </div>
+                <img class="account-icon" src="./assets/images/people-icon.png" />
+            </div>
+            <div id="headerPc">
+                <div class="shopping-cart">
+                    <img src="./assets/images/cart.png" />
+                    <div class="cart-number">100</div>
+                </div>
+                <div class="sign-up-link">
+                    Sign Up
+                </div>
+                <div class="login-link">
+                    Login
+                </div>
             </div>
         </div>
         

@@ -12,6 +12,9 @@ import { ArtistComponent } from './artist/artist.component';
 import { FooterbarComponent } from './footerbar/footerbar.component';
 import { HeaderComponent } from './header/header.component';
 
+import { NgxMasonryModule } from 'ngx-masonry';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 const appRoutes: Routes = [
   { path: 'users', component: UserComponent },
   { path: 'products', component: ProductComponent },
@@ -37,6 +40,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    NgxMasonryModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only set true

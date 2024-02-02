@@ -1,13 +1,11 @@
-<div class="container text-center">
-    <div class="row">
-      <div class="col">
-        Column
+<div class="container-fluid mt-3 remove-padding">
+  <div class="masonry-demo">
+    <ngx-masonry [options]="masonryOptions" >
+      <div ngxMasonryItem class="masonry-item"  *ngFor="let picture of masonryImages" class="masonry-item">
+        <img src="{{picture.picture}}" />
+        <div class="product-title">Suphannahong Thai Painting</div>
+        <div class="product-price">7,900 ฿</div>
       </div>
-      <div class="col">
-        Column
-      </div>
-      <div class="col">
-        Column
-      </div>
-    </div>
+    </ngx-masonry>
   </div>
+</div>
