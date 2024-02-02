@@ -14,12 +14,14 @@ import { HeaderComponent } from './header/header.component';
 
 import { NgxMasonryModule } from 'ngx-masonry';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './signup/signup.component';
 
 const appRoutes: Routes = [
   { path: 'users', component: UserComponent },
   { path: 'products', component: ProductComponent },
   { path: 'home', component: HomeComponent },
   { path: 'artist', component: ArtistComponent },
+  { path: 'signup', component: SignupComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -36,7 +38,8 @@ const appRoutes: Routes = [
     PagenofoundComponent,
     ArtistComponent,
     FooterbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
